@@ -1,0 +1,81 @@
+.switch {
+  background: #310A90;
+  border-radius: 1000px;
+  border: none;
+  position: sticky;
+  top: 50px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  margin-block: 40px;
+  margin-inline: -15px;
+  filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.5));
+  transform: rotate(90deg);
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch.active {
+  background: #43e2ba;
+  color: #000;
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+body {
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #213ED7 0%, #000000 99.99%, #69EB8A 100%, #42F870 100%);
+  color: #EFEFEF;
+}
+
+body.dark h1 {
+  color: #fff;
+}
+body.dark p {
+  color: #EFEFEF;
+}
+
+body.dark .comentario-1 h3 {
+  color: #EFEFEF;
+}
+body.dark #h3-g {
+  color: #EFEFEF;
+  text-shadow: -4px 4px 0px #310A90;
+}
+body.dark .footer-container h3{
+  color: #EFEFEF;
+}
+/*# sourceMappingURL=style.css.map */
